@@ -1,0 +1,97 @@
+[[main]]
+    # Top-level menu entry
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+[[main]]
+    # Top-level menu entry
+    identifier = "about-me"
+    name = "About Me"
+    url = "/about/"
+    parent = "about"
+    weight = 1
+
+[[main]]
+    # Top-level menu entry
+    identifier = "experience"
+    name = "Experience"
+    url = "/experience/"
+    parent = "about"
+    weight = 2
+
+[[main]]
+    identifier = "work"
+    name = "My Work"
+    url = "/projects/"
+    weight = 3
+
+[[main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    parent = "work"
+    weight = 3
+
+[[main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+#[[main]]
+#    identifier = "writing"
+#    name = "Articles"
+#    url = "/posts/"
+#    weight = 5
+
+#[[main]]
+#    identifier = "posts"
+#    name = "All Posts"
+#    url = "/posts/"
+#    parent = "writing"
+#    weight = 5
+
+#[[main]]
+#    identifier = "subsection"
+#    name = "Subsection"
+#    url = "/subsection/"
+    # url = "/posts/subsection/" # Remove url param from subsection/_index.md frontmatter to use full permalink
+#    parent = "writing"
+#    weight = 6
+
+#[[main]]
+    # Top-level menu entry
+#    identifier = "explore"
+#    name = "Explore"
+#    url = "/categories/"
+#    weight = 7
+
+#[[main]]
+#    identifier = "categories"
+#    name = "Categories"
+#    url = "/categories/"
+#    parent = "explore"
+#    weight = 7
+
+#[[main]]
+#    identifier = "tags"
+#    name = "Tags"
+#    url = "/tags/"
+#    parent = "explore"
+#    weight = 8
+
+#[[main]]
+#    identifier = "series"
+#    name = "Series"
+#    url = "/series/"
+#    parent = "explore"
+#    weight = 9
+
+#[[main]]
+#    identifier = "project-type"
+#    name = "Project Types"
+#    url = "/project-types/"
+#    parent = "explore"
+#    weight = 10
