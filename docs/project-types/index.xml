@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dhanudhara Perera</title>
-    <link>https://phasersiii.github.io/project-types/</link>
+    <link>https://dhanudhara.github.io/project-types/</link>
     <description>Recent content in Project Types on Dhanudhara Perera</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Dec 2023 18:45:31 +0530</lastBuildDate><atom:link href="https://phasersiii.github.io/project-types/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Dec 2023 18:45:31 +0530</lastBuildDate><atom:link href="https://dhanudhara.github.io/project-types/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
