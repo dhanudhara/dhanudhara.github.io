@@ -1,0 +1,46 @@
+
+<nav>
+    <div class="navbar">
+        <ul>
+            <li><a href="{{ '/' }}">Home</a></li>
+            <li><a href="{{ '/' }}">About Me</a></li>
+            <li><a href="{{ '/' }}">Contact Me</a></li>
+            <li><a href="{{ '/' }}">My Blog</a></li>
+        </ul>
+        <button id="theme-toggle" onclick="toggleTheme()">☀</button>
+    </div>
+</nav>
+
+<script>
+    function toggleTheme() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+    }
+</script>
+
+<style>
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f8f8; /* Light background */
+        padding: 10px;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px; /* Space between menu items */
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #333; /* Dark text color */
+    }
+
+    #theme-toggle {
+        margin-left: 20px;
+        padding: 5px 10px; /* Button padding */
+    }
+</style>

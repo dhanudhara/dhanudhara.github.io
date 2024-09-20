@@ -61,6 +61,31 @@ nav {
     text-align: center; /* Center aligned navigation items */
 }
 
+/* Navigation Bar Styles */
+nav {
+    background-color: #f8f8f8; /* Light background for navbar */
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline; /* Horizontal layout for menu items */
+}
+
+nav a {
+    padding: 10px; /* Space around links */
+}
+
+.dark-mode nav {
+    background-color: #333333; /* Dark background for navbar in dark mode */
+}
+
+.dark-mode nav a {
+    color: #eef0ec; /* Light text color in dark mode */
+}
+
 /* [7] Icons */
 .icon {
     width: 48px; /* Icon size */
