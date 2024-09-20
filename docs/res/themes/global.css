@@ -25,6 +25,8 @@ body {
     line-height: 1.5; /* Line height for readability */
     color: #333; /* Default text color */
     background-color: #eef0ec; /* Light background color */
+    justify-content: center;
+    align-items: center;
 }
 
 /* [3] Headings */
@@ -47,6 +49,21 @@ p {
     text-align: center; /* Center aligned paragraphs */
     max-width: 140ch; /* Limit width to 140 characters */
     margin-bottom: 16px; /* Bottom margin for spacing */
+}
+
+/* [ ] Container */
+.content {
+    width: 140ch;
+    margin: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content p {
+    text-align: left;
 }
 
 /* [5] Footnotes */
