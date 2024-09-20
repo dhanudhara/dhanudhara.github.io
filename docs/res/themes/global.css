@@ -1,0 +1,121 @@
+/**
+ * [Master Stylesheet]
+ */
+
+/******************************************************************************/
+
+/**
+ * Project:	Hugo theme
+ * Version:	1.0
+ * Primary use:	primary theme for hugo website 
+ */
+
+/******************************************************************************/
+/* [1] Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* [2] Body Styles */
+body {
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-size: 16px; /* Base font size */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Default text color */
+    background-color: #eef0ec; /* Light background color */
+}
+
+/* [3] Headings */
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center; /* Center aligned titles */
+}
+
+h1 {
+    font-size: 48px; /* Title size */
+}
+
+h2, h3 {
+    font-size: 32px; /* Sub-title size */
+}
+
+/* [4] Paragraphs */
+p {
+    font-size: 16px; /* Regular paragraph size */
+    text-align: center; /* Center aligned paragraphs */
+    max-width: 140ch; /* Limit width to 140 characters */
+    margin-bottom: 16px; /* Bottom margin for spacing */
+}
+
+/* [5] Footnotes */
+footer {
+    font-size: 12px; /* Footnote size */
+    text-align: center; /* Center aligned footnotes */
+}
+
+/* [6] Navigation Styles */
+nav {
+    font-size: 32px; /* Navigation font size */
+    text-align: center; /* Center aligned navigation items */
+}
+
+/* [7] Icons */
+.icon {
+    width: 48px; /* Icon size */
+    height: 48px;
+}
+
+/* [8] Images, Videos, and Tables */
+img,
+video,
+table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Responsive width for media elements */
+}
+
+/* [9] Utility Classes */
+.mt-16 { 
+    margin-top: 16px; 
+}
+
+.mb-16 { 
+    margin-bottom: 16px; 
+}
+
+/* [10] Color Schemes */
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #eef0ec; /* Light background color */
+    color: #333333; /* Dark text color */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333333; /* Dark background color */
+    color: #eef0ec; /* Light text color */
+}
+
+.highlight {
+    color: #98a754; /* Highlight color for emphasis */
+}
+
+/* Dim images in dark mode */
+body.dark-mode img {
+    opacity: 0.7;
+}
+
+/* [11] Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack navigation items on small screens */
+        align-items: center;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
