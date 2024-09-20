@@ -133,14 +133,3 @@ body.dark-mode {
 body.dark-mode img {
     opacity: 0.7;
 }
-
-/* [11] Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column; /* Stack navigation items on small screens */
-        align-items: center;
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
