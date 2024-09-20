@@ -16,7 +16,27 @@
         const body = document.body;
         body.classList.toggle('dark-mode');
         body.classList.toggle('light-mode');
+        // Save the current theme to localStorage
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
     }
+
+    // Function to apply the saved theme on page load
+    function applySavedTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.body.classList.add(savedTheme + '-mode');
+        } else {
+            // Default to light mode if no preference is saved
+            document.body.classList.add('light-mode');
+        }
+    }
+
+    // Call the function when the page loads
+    window.onload = applySavedTheme;
 </script>
 
 <style>
