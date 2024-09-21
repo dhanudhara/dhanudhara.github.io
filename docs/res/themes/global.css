@@ -45,7 +45,7 @@ h2, h3 {
 
 /* [4] Paragraphs */
 p {
-    font-size: 16px; /* Regular paragraph size */
+    font-size: 18px; /* Regular paragraph size */
     text-align: center; /* Center aligned paragraphs */
     max-width: 140ch; /* Limit width to 140 characters */
     margin-bottom: 16px; /* Bottom margin for spacing */
