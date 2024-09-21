@@ -3,8 +3,39 @@ layout: default
 tilte: Maintenance page
 ---
 
-# Uh-oh!
-I have taken down the site down for maintenance. Come back later to see what has changed.
+# Welcome to my website
+---
+### Hello! I am Dhanudhara
+I'm a software engineer, developer, sustainability enthusiast, and a director. This is my personal website, where I share all my latest projects, ideas, blog, and how you can get in touch.
+
+
 <div align="center">
-    <img src="res/images/loading.gif" alt="WIP"/>
+    <figure>
+        <img 
+            src="res/images/banner.webp"
+            alt="Web banner"
+        >
+        <figcaption>This banner was created by AI!</figcaption>
+    </figure>
+</div>
+
+
+### Call to action:
+---
+<div align="center" style="display: inline;">
+    <div class="posts-card">
+        <a href="{{ '/projects' }}">My projects</a>
+    </div>
+
+    <div class="posts-card">
+        <a href="{{ '/posts' }}">My blogs</a>
+    </div>
+
+    <div class="posts-card">
+        <a href="{{ '/about' }}">Learn more about me</a>
+    </div>
+
+    <div class="posts-card">
+        <a href="{{ '/contact' }}">Get in touch</a>
+    </div>
 </div>
