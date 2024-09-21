@@ -162,6 +162,22 @@ a {
     text-decoration: none; 
     cursor: pointer;
     color: inherit;
+    transition: transform 0.5s ease, background-color 0.3s; 
+}
+
+button {
+    transition: transform 0.5s, background-color 0.3s;
+}
+
+a:hover,
+button:hover {
+    color: inherit;
+    animation: hoverEffect 0.3s forwards;
+}
+
+a:active,
+button:active {
+    animation: clickEffect 0.5s forwards;
 }
 
 ul {
@@ -175,4 +191,23 @@ ul {
     margin-bottom: 8px;
     background-color: rgba(116, 127, 137, 0.2);
     border-radius: 8px;
+}
+
+/* Animation */
+@keyframes hoverEffect {
+    from {
+	transform: scale(1);
+    }
+    to {
+	transform: scale(1.25);
+    }
+}
+
+@keyframes clickEffect {
+    from {
+	background-color: inherit;
+    }
+    to {
+	background-color: rgba(116, 127, 137, 0.3);
+    }
 }
