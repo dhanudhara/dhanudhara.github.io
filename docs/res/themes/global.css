@@ -85,6 +85,16 @@ p {
     text-align: left;
 }
 
+.content a::after {
+content: ''; /* Clear the existing content */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-left" viewBox="0 0 16 16"><path fill="rgba(116, 127, 137, 0.9)" fill-rule="evenodd" d="M7.364 3.5a.5.5 0 0 1 .5-.5H14.5A1.5 1.5 0 0 1 16 4.5v10a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 3 14.5V7.864a.5.5 0 1 1 1 0V14.5a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-.5-.5H7.864a.5.5 0 0 1-.5-.5"/><path fill="rgba(116, 127, 137, 0.9)" fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 0 1H1.707l8.147 8.146a.5.5 0 0 1-.708.708L1 1.707V5.5a.5.5 0 0 1-1 0z"/></svg>');
+    width: 16px; /* Set width for the icon */
+    height: 16px; /* Set height for the icon */
+    background-size: contain; /* Ensure the SVG scales properly */
+    display: inline-block; /* Make it behave like an inline element */
+    margin-left: 4px; /* Space between text and icon */
+}
+
 /* [5] Footnotes */
 footer {
     font-size: 12px; /* Footnote size */
