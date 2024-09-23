@@ -27,7 +27,7 @@ As a developer, I have a few trusty tools that help me get the job done. In this
 - #### [Devbox](https://www.jetify.com/devbox): 
 	This one is for fellow developers. It's a containerised solution for all your CI (continuous integration) needs. I'm not trying to criticize Docker, but Devbox is a bit easier to configure with JSON, and it uses fewer resources and is more performant because it has no overhead containers.
 
-I could go on forever, but I want to keep this list manageable! There are so many fantastic tools you can use in the terminal. If you'd like to learn more about these awesome tools, just check out the **"[How I find these awesome tools](#how-i-find-awesome-tools)"** section.
+I could go on forever, but I want to keep this list manageable! There are so many fantastic tools you can use in the terminal. If you'd like to learn more about these awesome tools, just check out the **"[How I find these awesome tools](#finding-tools)"** section.
 
 ## My AI needs
 - #### [perplexity](https://www.perplexity.ai/): 
@@ -47,7 +47,7 @@ I could go on forever, but I want to keep this list manageable! There are so man
 - #### [mpv](https://mpv.io/): 
 	A no-nonesence, dead simple media player. But don't be mistaken, it is powerful and can be made even more so with a large collection of **[scripts (extensions)](https://www.google.com/search?&q=awesome+mpv+scripts)**.
 
-## How I find these awesome tools {{: #how-i-find-awesome-tools}}
+## <a id="finding-tools"></a> How I find these awesome tools
 I just love going through curated awesome lists! All you have to do is type **"`awesome..list site:github.com`"** into ~~Google~~ (your favourite search engine with regex) and you'll be amazed at how many lists there are. I also like browsing **[alternativeto](https://alternativeto.net)** to find alternatives. And of course, I watch lots of YouTube videos on apps and Linux. So there you have it – that's how I ~~procrastinate~~ find these awesome tools!
 
 ## On a final note
