@@ -1,17 +1,19 @@
 ---
 layout: default
-tilte: Maintenance page
+tilte: Home Page
 ---
 
 # Welcome to my website
----
-### Hello! I am Dhanudhara
-I'm a software engineer, developer, sustainability enthusiast, and a director. This is my personal website, where I share all my latest projects, ideas, blog, and how you can get in touch.
 
+---
+
+### Hello! I am Dhanudhara
+
+I'm a software engineer, developer, sustainability enthusiast, and a director. This is my personal website, where I share all my latest projects, ideas, blog, and how you can get in touch.
 
 <div align="center">
     <figure>
-        <img 
+        <img
             src="res/images/banner.webp"
             alt="Web banner"
         >
@@ -19,8 +21,8 @@ I'm a software engineer, developer, sustainability enthusiast, and a director. T
     </figure>
 </div>
 
+### Call to action
 
-### Call to action:
 ---
 <div align="center" style="display: inline;">
     <div class="posts-card">
