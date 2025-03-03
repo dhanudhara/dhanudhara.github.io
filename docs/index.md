@@ -7,7 +7,7 @@ tilte: Home Page
 
 ---
 
-### Hello! I am Dhanudhara
+### Hello! I am <span itemprop="name">Dhanudhara</span>
 
 I'm a software engineer, developer, sustainability enthusiast, and a director. This is my personal website, where I share all my latest projects, ideas, blog, and how you can get in touch.
 
