@@ -1,10 +1,8 @@
-
 <nav>
     <div class="navbar">
         <ul>
             <li><a href="{{ '/' }}">Home</a></li>
             <li><a href="{{ '/about' }}">About Me</a></li>
-            <li><a href="{{ '/contact' }}">Contact Me</a></li>
             <li><a href="{{ '/posts' }}">My Blog</a></li>
         </ul>
         <button id="theme-toggle" onclick="toggleTheme()">☀</button>
@@ -62,7 +60,8 @@
     .navbar ul {
         list-style-type: none;
         display: flex;
-        gap: 16px; /* Space between menu items */
+        gap: 16px;
+        /* Space between menu items */
     }
 
     .navbar a {
@@ -72,22 +71,29 @@
 
     #theme-toggle {
         margin-left: 16px;
-        border: none; /* Remove default border */
-        padding: 8px 12px; /* Button padding */
-        cursor: pointer; /* Change the cursor to a pointer */
+        border: none;
+        /* Remove default border */
+        padding: 8px 12px;
+        /* Button padding */
+        cursor: pointer;
+        /* Change the cursor to a pointer */
     }
 
     @media (max-width: 720px) {
         .navbar ul {
-            flex-direction: column; /* Stack links vertically on small screens */
-            align-items: flex-start; /* Align links to the left */
-            width: 100%; /* Full width for vertical alignment */
+            flex-direction: column;
+            /* Stack links vertically on small screens */
+            align-items: flex-start;
+            /* Align links to the left */
+            width: 100%;
+            /* Full width for vertical alignment */
         }
 
         #theme-toggle {
-            margin-top: 16px; /* Add space above the toggle button */
-            margin-left: 0; /* Reset left margin for vertical layout */
+            margin-top: 16px;
+            /* Add space above the toggle button */
+            margin-left: 0;
+            /* Reset left margin for vertical layout */
         }
     }
-
 </style>
