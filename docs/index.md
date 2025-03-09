@@ -36,8 +36,4 @@ I'm a software engineer, developer, sustainability enthusiast, and a director. T
     <div class="posts-card">
         <a href="{{ '/about' }}">Learn more about me</a>
     </div>
-
-    <div class="posts-card">
-        <a href="{{ '/contact' }}">Get in touch</a>
-    </div>
 </div>
