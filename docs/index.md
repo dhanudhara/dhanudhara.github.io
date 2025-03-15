@@ -1,6 +1,6 @@
 ---
 layout: default
-tilte: Home Page
+tilte: Home
 ---
 
 # Welcome to my website

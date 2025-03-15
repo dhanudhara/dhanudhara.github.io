@@ -3,6 +3,7 @@ layout: default
 title: My blog
 ---
 # My blog
+
 <ul>
 {% for post in site.posts %}
    <li>
