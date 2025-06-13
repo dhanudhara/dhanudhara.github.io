@@ -26,10 +26,6 @@ I'm a software engineer, developer, sustainability enthusiast, and a director. T
 ---
 <div align="center" style="display: inline;">
     <div class="posts-card">
-        <a href="{{ '/projects' }}">My projects</a>
-    </div>
-
-    <div class="posts-card">
         <a href="{{ '/posts' }}">My blogs</a>
     </div>
 
