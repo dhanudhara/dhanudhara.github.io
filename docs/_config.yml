@@ -34,3 +34,21 @@ compress_html: # - http://jch.penibelst.de/
 port: 4000
 host: 0.0.0.0
 safe: false
+
+skyhook:
+  # Directories to process (default: ['assets'])
+  asset_dirs: [assets, images]
+
+  digest_assets: true
+
+  # Directory for digested assets (default: '_digested')
+  digest_dir: '_digested'
+
+  # Image processing library (default: 'mini_magick')
+  # Options: 'mini_magick' or 'vips'
+  # vips is faster but requires libvips to be installed
+  image_processor: mini_magick
+
+# Include digested files in build
+include:
+  - _digested
