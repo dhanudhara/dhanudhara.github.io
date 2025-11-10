@@ -1,4 +1,6 @@
 <script>
+    const button = document.getElementById('theme-toggle');
+
     function toggleTheme() {
         const body = document.body;
         body.classList.toggle('dark-mode');
@@ -7,11 +9,11 @@
         if (body.classList.contains('dark-mode')) {
             localStorage.setItem('theme', 'dark');
             button.style.backgroundColor = '#333333';
-            document.getElementById('theme-toggle').innerHTML = '🌙';  /* Moon icon in dark mode */
+            button.innerHTML = '🌙';  /* Moon icon in dark mode */
         } else {
             localStorage.setItem('theme', 'light');
             button.style.backgroundColor = '#333333';
-            document.getElementById('theme-toggle').innerHTML = '☀'; /* Sun icon in light mode */
+            button.innerHTML = '☀'; /* Sun icon in light mode */
         }
     }
 
