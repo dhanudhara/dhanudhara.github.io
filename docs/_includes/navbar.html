@@ -1,19 +1,26 @@
 <script>
-    const button = document.getElementById('theme-toggle');
-
+    // Function to toggle theme and save preference
     function toggleTheme() {
         const body = document.body;
         body.classList.toggle('dark-mode');
         body.classList.toggle('light-mode');
-        // Save the current theme to localStorage
-        if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark');
-            button.style.backgroundColor = '#333333';
-            button.innerHTML = '🌙';  /* Moon icon in dark mode */
-        } else {
-            localStorage.setItem('theme', 'light');
-            button.style.backgroundColor = '#333333';
-            button.innerHTML = '☀'; /* Sun icon in light mode */
+
+        const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+        localStorage.setItem('theme', currentTheme);
+        updateThemeToggleButton(currentTheme);
+    }
+
+    // Function to update the theme toggle button's appearance
+    function updateThemeToggleButton(theme) {
+        const button = document.getElementById('theme-toggle');
+        if (button) {
+            if (theme === 'dark') {
+                button.style.backgroundColor = '#333333'; /* Dark mode background */
+                button.innerHTML = '🌙'; /* Moon icon in dark mode */
+            } else {
+                button.style.backgroundColor = '#ef0ec'; /* Light mode background */
+                button.innerHTML = '☀'; /* Sun icon in light mode */
+            }
         }
     }
 
@@ -22,17 +29,11 @@
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             document.body.classList.add(savedTheme + '-mode');
-            if (savedTheme === 'dark') {
-                button.style.backgroundColor = '#333333'; /* Dark mode background */
-                button.innerHTML = '🌙'; /* Moon icon in dark mode */
-            } else {
-                button.style.backgroundColor = '#ef0ec'; /* Light mode background */
-                button.innerHTML = '☀'; /* Sun icon in light mode */
-            }
+            updateThemeToggleButton(savedTheme);
         } else {
             // Default to light mode if no preference is saved
             document.body.classList.add('light-mode');
-            button.style.backgroundColor = '#ef0ec';
+            updateThemeToggleButton('light');
         }
     }
 
