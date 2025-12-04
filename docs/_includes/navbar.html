@@ -1,0 +1,32 @@
+<nav>
+  <div class="nav-links">
+    {% for item in site.data.navigation %}
+      {% assign current_url = page.url %}
+      {% assign item_url = item.link %}
+      {% if item_url == '/' %}
+        {% if current_url == '/' or current_url == '/index.html' %}
+          {% assign is_current = true %}
+        {% else %}
+          {% assign is_current = false %}
+        {% endif %}
+      {% else %}
+        {% if current_url == item_url or current_url contains item_url %}
+          {% assign is_current = true %}
+        {% else %}
+          {% assign is_current = false %}
+        {% endif %}
+      {% endif %}
+      <a href="{{ item.link | relative_url }}" {% if is_current %}class="current"{% endif %}>{{ item.name }}</a>
+    {% endfor %}
+  </div>
+  {% if page.url == '/about.html' or page.url == '/about/' %}
+  <button id="download-cv-btn" class="download-btn" title="Download CV">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+      <polyline points="7 10 12 15 17 10"></polyline>
+      <line x1="12" y1="15" x2="12" y2="3"></line>
+    </svg>
+  </button>
+  {% endif %}
+</nav>
+
