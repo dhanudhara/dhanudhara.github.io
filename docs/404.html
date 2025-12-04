@@ -4,4 +4,5 @@ title: 404 - page not found
 ---
 
 <h1>Page not found...</h1>
-<p>Go back to <a href="https://dhanuadhara.github.io">home</a></p>
+{% assign home = site.data.navigation | where: "title", "Home" | first %}
+<a href="{{ home.href | prepend: site.baseurl }}">Return Home</a>
