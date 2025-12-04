@@ -1,0 +1,30 @@
+name: "Dhanudhara Perera"
+email: "dhanut@tuta.io"
+
+education:
+  - degree: "Bsc (Hons) Computer Science"
+    institution: "Kingston University"
+    location: "London, UK"
+    year: "2025"
+    details: ["First Class Honours"]
+  - degree: "HND Computer Science"
+    institution: "Pearson University"
+    location: "London, UK"
+    year: "2022"
+
+experience:
+  - title: "Freelance Software Engineer"
+    company: "Self-Employed"
+    location: "Sri Lanka"
+    start_date: "2023"
+    end_date: "Present"
+    responsibilities:
+      - "Development of Android applications"
+      - "Handling Python backend development"
+      - "Working with osmdroid maps"
+      - "Working with forecast data"
+
+publications: []
+awards: []
+skills: ["Android Development", "Python", "Osmdroid Maps", "Map Plotting"]
+

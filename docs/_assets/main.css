@@ -1,0 +1,64 @@
+:root {
+  --primary-accent: #eeeeee;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+nav a.current {
+  text-decoration: underline;
+}
+
+nav .download-btn {
+  background-color: var(--primary-accent);
+  border: 1px solid #000;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .download-btn svg {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  
+  nav .nav-links {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav .download-btn {
+    width: 100%;
+  }
+}
