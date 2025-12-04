@@ -4,3 +4,10 @@ title: Home
 ---
 
 <h1>Site under construction</h1>
+
+<div id="home-content-image"
+     hx-get="{{ '/_assets/content-image.html' | relative_url }}"
+     hx-trigger="load"
+     hx-swap="outerHTML">
+  <!-- Cog wheel image will be lazy-loaded here by htmx -->
+</div>
