@@ -47,6 +47,27 @@
 </section>
 {% endif %}
 
+{% if site.data.aboutme.projects.size > 0 %}
+<section>
+  <h2>Key Projects</h2>
+  {% for pro in site.data.aboutme.projects %}
+    <table width="100%">
+      <tr>
+        <td><strong>{{ pro.title }}</strong>{% if pro.company %}, {{ pro.company }}{% endif %}{% if pro.location %}, {{ pro.location }}{% endif %}</td>
+        <td align="right">{% if pro.type %}{{ pro.type }}{% endif %}<td>
+      </tr>
+    </table>
+    {% if pro.responsibilities.size > 0 %}
+      <ul>
+        {% for responsibility in pro.responsibilities %}
+          <li>{{ responsibility }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+</section>
+{% endif %}
+
 {% if site.data.aboutme.publications.size > 0 %}
 <section>
   <h2>Publications</h2>
@@ -75,6 +96,17 @@
   <ul>
     {% for skill in site.data.aboutme.skills %}
       <li>{{ skill }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if site.data.aboutme.interests.size > 0 %}
+<section>
+  <h2>Interests</h2>
+  <ul>
+    {% for interest in site.data.aboutme.interests %}
+      <li>{{ interest }}</li>
     {% endfor %}
   </ul>
 </section>

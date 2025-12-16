@@ -24,7 +24,16 @@ experience:
       - "Working with osmdroid maps"
       - "Working with forecast data"
 
+projects:
+  - title: "Plastic forecast"
+    type: "Individual Project"
+    company: "Kingston University"
+    location: "London, UK"
+    responsibilities:
+      - "Designed and developed a microplastic forecast system"
+      - "Using system architecture, implementation at github.com/dhanudhara/pforecast"
+
 publications: []
 awards: []
 skills: ["Android Development", "Python", "Osmdroid Maps", "Map Plotting"]
-
+interests: ["Mountaineering"]
