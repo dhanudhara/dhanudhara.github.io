@@ -2,7 +2,7 @@ name: "Dhanudhara Perera"
 email: "dhanut@tuta.io"
 address: "Colombo, Sri Lanka | github.com/dhanudhara | codeberg.org/dhanudhara"
 
-summary: "Back-end developer with 2 years of experience in Python data pipelines. Build data processing pipelines with GFS/WRF, pandas, MySQL, and osmdroid SDK. Experience in docker compose for local deployments, cronjob automations. Seeking for back-end/system automation roles"
+summary: "Back-end developer with 2 years of experience in Python data pipelines. Build data processing pipelines with GFS/WRF, pandas, MySQL, and osmdroid SDK. Experience in docker compose for local deployments, cron job automations. Seeking for back-end/system automation roles"
 
 education:
   - degree: "Bsc (Hons) Computer Science"
@@ -25,7 +25,7 @@ experience:
       - "Build weather data pipeline: GFS with wgrib2 -> pandas -> MySQL storage"
       - "Developed raster generation: Weather data -> pandas -> matplotlib -> georeferenced images"
       - "osmdroid SDK integration for weather marker/raster visiualisation"
-      - "Autotamated data pull and pipeline with cronjobs"
+      - "Automated data pull and pipeline with cron jobs"
 
 projects:
   - title: "Plastic forecast"
@@ -33,8 +33,8 @@ projects:
     company: "Kingston University"
     location: "London, UK"
     responsibilities:
-      - "Built microplastic forecasting system with Neural Prophet and local docker compose orcehstration"
-      - "Pipeline: NASA sentinental netCDFs -> netCDF4 processing -> forecast generation -> MySQL storing -> API (Flask, FastAPI) output"
+      - "Built microplastic forecasting system with Neural Prophet and local docker compose orchestration"
+      - "Pipeline: NASA CYGNSS v3 with PO.DAAC netCDF-> netCDF processing -> forecast generation -> MySQL storing -> API (Flask, FastAPI) output"
       - "(Progress) Kubernetes migration and GraphCast for improving accuracy"
       - "Source code: https://codeberg.org/dhanudhara/pforecast"
 
@@ -42,7 +42,7 @@ certifications:
   - "Roppers Academy: Computing Fundementals (badge at: https://www.roppers.org/certificates/oggoctt6ts)"
 
 skills:
-  - "Python: Flask, pandas, numpy, matplotlib, asyncio, SQLAlchemy, uv"
+  - "Python: Flask, pandas, numpy, matplotlib, asyncio, SQLAlchemy, uv (python packaging)"
   - "Data: GFS/WRF weather data, raster generation, forecsting pipelines"
   - "Android: Kotlin, osmdroid SDK, marker visiualisation, MySQL connector"
   - "DevOps: Docker, docker-compose, podman, cronjob automation, Linux, bash"
