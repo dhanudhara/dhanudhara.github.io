@@ -43,9 +43,9 @@ certifications:
 
 skills:
   - "Python: Flask, pandas, numpy, matplotlib, asyncio, SQLAlchemy, uv (python packaging)"
-  - "Data: GFS/WRF weather data, raster generation, forecsting pipelines"
+  - "Data: GFS/WRF weather data, CYGNSS v3, PO.DAAC, raster generation, forecsting pipelines"
   - "Android: Kotlin, osmdroid SDK, marker visiualisation, MySQL connector"
-  - "DevOps: Docker, docker-compose, podman, cronjob automation, Linux, bash"
+  - "DevOps: Docker, docker-compose, podman, cron job automation, Linux, bash"
   - "Databases: MySQL, SQLite"
   - "Learning: Kubernetes, GraphCast"
 
