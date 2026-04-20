@@ -5,6 +5,13 @@
   </address>
 </header>
 
+{% if site.data.aboutme.summary %}
+<section>
+  <h2>Summary</h2>
+  <p>{{ site.data.aboutme.summary }}</p>
+</section>
+{% endif %}
+
 {% if site.data.aboutme.education.size > 0 %}
 <section>
   <h2>Education</h2>
@@ -23,6 +30,17 @@
       </ul>
     {% endif %}
   {% endfor %}
+</section>
+{% endif %}
+
+{% if site.data.aboutme.certifications.size > 0 %}
+<section>
+  <h2>Certifications</h2>
+  <ul>
+    {% for cert in site.data.aboutme.certifications %}
+      <li>{{ cert }}</li>
+    {% endfor %}
+  </ul>
 </section>
 {% endif %}
 
