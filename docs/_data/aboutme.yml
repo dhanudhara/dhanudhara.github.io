@@ -1,6 +1,6 @@
 name: "Dhanudhara Perera"
 email: "dhanut@tuta.io"
-address: "Colombo, Sri Lanka | github.com/dhanudhara | codeberg.org/dhanudhara"
+address: "Colombo, Sri Lanka | <a href=\"https://github.com/dhanudhara\">github.com/dhanudhara</a> | <a href=\"https://codeberg.org/dhanudhara\">codeberg.org/dhanudhara</a>"
 
 summary: "Back-end developer with 2 years of experience in Python data pipelines. Build data processing pipelines with GFS/WRF, pandas, MySQL, and osmdroid SDK. Experience in docker compose for local deployments, cron job automations. Seeking for back-end/system automation roles"
 
@@ -36,10 +36,10 @@ projects:
       - "Built microplastic forecasting system with Neural Prophet and local docker compose orchestration"
       - "Pipeline: NASA CYGNSS v3 with PO.DAAC netCDF-> netCDF processing -> forecast generation -> MySQL storing -> API (Flask, FastAPI) output"
       - "(Progress) Kubernetes migration and GraphCast for improving accuracy"
-      - "Source code: https://codeberg.org/dhanudhara/pforecast"
+      - "Source code: <a href=\"https://codeberg.org/dhanudhara/pforecast\">codeberg.org/dhanudhara/pforecast</a>"
 
 certifications:
-  - "Roppers Academy: Computing Fundementals (badge at: https://www.roppers.org/certificates/oggoctt6ts)"
+  - "Roppers Academy: Computing Fundementals (badge at: <a href=\"https://www.roppers.org/certificates/oggoctt6ts\">https://www.roppers.org/certificates/oggoctt6ts</a>)"
 
 skills:
   - "Python: Flask, pandas, numpy, matplotlib, asyncio, SQLAlchemy, uv (python packaging)"

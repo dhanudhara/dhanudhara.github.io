@@ -11,20 +11,13 @@
     {% include navbar.html %}
     {{ content }}
     {% if page.url == '/about.html' or page.url == '/about/' %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/html2canvas@latest/dist/html2canvas.min.js"></script>
     <script>
-      document.getElementById('download-cv-btn').addEventListener('click', function() {
+      document.getElementById('download-cv-btn').addEventListener('click', async function() {
         const element = document.getElementById('cv-content');
         const primaryAccent = getComputedStyle(document.documentElement).getPropertyValue('--primary-accent').trim();
-        const opt = {
-          margin: 0,
-          filename: 'CV.pdf',
-          // image: { type: 'jpeg', quality: 0.98 },
-          html2canvas: { scale: 2, useCORS: true },
-          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
-        
-        // Apply PDF-specific styling temporarily
+        element.querySelectorAll('a').forEach(a => a.innerHTML = `<nobr>${a.textContent}</nobr>`);
         const styleSheet = document.createElement('style');
         styleSheet.textContent = `
           #cv-content header h1 {
@@ -59,10 +52,22 @@
         `;
         document.head.appendChild(styleSheet);
         
-        html2pdf().set(opt).from(element).save().then(function() {
-          // Remove temporary styles after PDF generation
+        try {
+          const { jsPDF } = window.jspdf;
+          const pdf = new jsPDF('portrait', 'mm', 'a4');
+          const pdfWidth = pdf.internal.pageSize.getWidth();
+          const pdfHeight = pdf.internal.pageSize.getHeight();
+          await pdf.html(element, {
+            x: 0,
+            y: 0,
+            width: 210,
+            windowWidth: 794,
+            autoPaging: 'text'
+          });
+          pdf.save('cv.pdf');
+        } finally {
           document.head.removeChild(styleSheet);
-        });
+        }
       });
     </script>
     {% endif %}
