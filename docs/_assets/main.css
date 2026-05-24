@@ -1,5 +1,18 @@
 :root {
-  --primary-accent: #93e9be;
+  --primary: #93e9be;
+  --secondary: #151e3f;
+  --accent: #8e8e8e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 .content-image {
@@ -15,9 +28,11 @@ nav {
   flex-wrap: wrap;
   gap: 10px;
   padding: 10px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--accent);
   align-items: center;
   justify-content: space-between;
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 nav .nav-links {
@@ -28,9 +43,10 @@ nav .nav-links {
 
 nav a {
   text-decoration: none;
-  border: 1px solid #000;
+  border: 1px solid var(--accent);
   padding: 10px 20px;
   display: inline-block;
+  color: var(--primary);
 }
 
 nav a.current {
@@ -38,8 +54,8 @@ nav a.current {
 }
 
 nav .download-btn {
-  background-color: var(--primary-accent);
-  border: 1px solid #000;
+  background-color: var(--primary);
+  border: 1px solid var(--accent);
   padding: 10px;
   cursor: pointer;
   display: flex;
@@ -49,6 +65,7 @@ nav .download-btn {
 
 nav .download-btn svg {
   display: block;
+  fill: var(--secondary);
 }
 
 @media (max-width: 600px) {
@@ -67,6 +84,214 @@ nav .download-btn svg {
   }
   
   nav .download-btn {
+    width: 100%;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px 40px;
+  text-align: center;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.hero-tagline {
+  margin-top: 12px;
+  font-size: 1.25rem;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  flex: 1;
+  max-width: 600px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  padding: 0 4px;
+}
+
+.slide-label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.slide-cards {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.repo-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px;
+  text-decoration: none;
+  color: var(--secondary);
+  flex: 1;
+  max-width: 280px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.repo-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+.repo-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.repo-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.repo-stars {
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.repo-desc {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--secondary);
+  opacity: 0.8;
+  margin-bottom: 12px;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.repo-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.repo-lang {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--accent);
+}
+
+.lang-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.repo-platform {
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+}
+
+.repo-platform svg {
+  width: 18px;
+  height: 18px;
+}
+
+.carousel-btn {
+  background: none;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+
+.carousel-btn:hover:not(:disabled) {
+  background: var(--secondary);
+  color: var(--primary);
+  border-color: var(--secondary);
+}
+
+.carousel-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.carousel-btn:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 16px 30px;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .carousel {
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .slide-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .repo-card {
+    max-width: 100%;
     width: 100%;
   }
 }

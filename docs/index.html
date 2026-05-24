@@ -3,11 +3,28 @@ layout: default
 title: Home
 ---
 
-<h1>Site under construction</h1>
+<script id="repos-data" type="application/json">[
+{% for repo in site.data.repos %}
+  {
+    "owner": "{{ repo.owner }}",
+    "repo": "{{ repo.repo }}",
+    "platform": "{{ repo.platform }}",
+    "category": "{{ repo.category }}"
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]</script>
 
-<div id="home-content-image"
-     hx-get="{{ '/_assets/content-image.html' | relative_url }}"
-     hx-trigger="load"
-     hx-swap="outerHTML">
-  <!-- Cog wheel image will be lazy-loaded here by htmx -->
-</div>
+<section class="hero">
+  <h1 class="hero-name">Dhanudhara Perera</h1>
+  <p class="hero-tagline">Building interesting things :)</p>
+</section>
+
+<section class="carousel" id="carousel">
+  <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Previous">‹</button>
+  <div class="carousel-viewport">
+    <div class="carousel-track" id="carousel-track"></div>
+  </div>
+  <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Next">›</button>
+</section>
+
+<script src="{{ '/_assets/carousel.js' | relative_url }}"></script>
